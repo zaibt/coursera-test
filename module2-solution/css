@@ -1,1 +1,87 @@
+h1{
+    text-align: center;
+    position: sticky;
+}
+div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: blueviolet; */
+    /* height: 200px; */
+}
 
+.menu{
+border: 2px solid black;
+background-color: aquamarine;
+flex: 1 1 100%;
+/* width: 400px; */
+/* height: 150px; */
+padding: 20px;
+box-sizing: border-box;
+
+/* margin: 0; */
+}
+
+
+    
+    
+
+.food-p{
+    width: 100%;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.food-h{
+/* text-align: end; */
+display: inline;
+margin: 0 auto;
+padding: 5px 10px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+margin-top: 5px;
+background-color: red;
+
+}
+
+
+@media (min-width: 992px) {
+    .menu{
+        flex: 1 1 30%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+ 
+    .menu{
+        flex: 1 1 48%;
+    }
+
+    .menu:nth-child(3){
+        flex-basis: 100%;
+    }
+
+    @media (max-width: 768) {
+        .menu{
+    
+        }
+ 
+    }
+
+    @media (max-width: 767px) {
+
+            div{
+                display: block;
+            }
+         
+        .menu{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+
+
+
+}
